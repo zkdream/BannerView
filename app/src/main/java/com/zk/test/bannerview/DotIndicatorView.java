@@ -23,6 +23,7 @@ import android.view.View;
 public class DotIndicatorView extends View{
     private Drawable drawable;
 
+
     public DotIndicatorView(Context context) {
         this(context, null);
     }
