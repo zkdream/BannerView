@@ -148,7 +148,7 @@ public class BannerViewPager extends ViewPager{
                 @Override
                 public void onClick(View view) {
                     if (mListener != null){
-                        mListener.click(position);
+                        mListener.click(position%mAdapter.getCount());
                     }
                 }
             });
