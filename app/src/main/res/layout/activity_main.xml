@@ -6,19 +6,20 @@
     android:layout_height="match_parent"
     tools:context="com.zk.test.bannerview.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.zk.test.bannerview.BannerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        app:dotSize="8dp"
+        app:dotDistance="10dp"
+        app:dotGravity="right"
+        app:withProportion="8"
+        app:heightProportion="3"
+        app:bottomColor="@color/banner_bottom_bar_bg_day"
+        app:dotIndicatorFocus="@color/dot_select_color"
+        app:dotIndicatorNormal="@color/dot_unselect_color"
+        android:layout_height="130dp"
+        />
 
 </android.support.constraint.ConstraintLayout>
